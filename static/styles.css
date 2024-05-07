@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #558265;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.song-container {
+    border: 1px solid #2a4959;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.song-name {
+    font-weight: bold;
+}
+.artist-names {
+    color: #666;
+}

@@ -1,0 +1,24 @@
+<!-- top_tracks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 Tracks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>My Top 50 Tracks</h1>
+        <div class="song-list">
+            {% for track in tracks %}
+                <div class="song-container">
+                    <p class="song-name">{{ track.name }}</p>
+                    <p class="artist-names">{% for artist in track.artists %}{{ artist.name }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+                </div>
+            {% endfor %}
+            <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
